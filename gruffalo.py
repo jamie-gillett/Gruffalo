@@ -30,12 +30,6 @@ for animal in animals:
     print(f"I'm {'having' if animal.name=='Snake' else 'going to have'} {animal.meal} with a gruffalo.\"")
     print("\"A gruffalo? What's a gruffalo?\"")
     print("\"A gruffalo! Why, didn't you know?")
-    # if not animal.name == "Snake":
-    #     print(f'"He has {animal.descriptions[0]}, and {animal.descriptions[1]},')
-    #     print(f'And {animal.descriptions[2]}."')
-    # else:
-    #     print(f'"His {animal.descriptions[0]}, his {animal.descriptions[1]};')
-    #     print(f'He has {animal.descriptions[2]}."')
     print(f'"{"He has" if not animal.name=="Snake" else "His"} {animal.descriptions[0]}, {"and" if not animal.name=="Snake" else "his"} {animal.descriptions[1]}{"," if not animal.name=="Snake" else ";"}')
     print(f'{"And" if not animal.name=="Snake" else "He has"} {animal.descriptions[2]}."')
     print()
