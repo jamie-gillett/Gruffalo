@@ -52,8 +52,6 @@ print('...Oh!\u201D')
 print()
 
 # MOUSE ENCOUNTERS THE GRUFFALO
-# NOTE: This would have been more straight forward to do writing out the individual six lines
-# but the point of the exercise was to capture the structure, not to reprint the Gruffalo
 for animal in animals:
     if animal.name == "Fox":
         print("But who is this creature with", end=" ")
