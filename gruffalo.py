@@ -28,7 +28,7 @@ print()
 # MOUSE ENCOUNTERS ANIMALS
 for animal in animals:
     print(f'{"A mouse took a stroll" if animal.name=="Fox" else "On went the mouse"} through the deep dark wood.')
-    print(f'A{"n" if animal.name=="Owl" else ""} {animal.name.lower()} saw the mouse and the mouse looked good.')
+    print(f'{"An" if animal.name=="Owl" else "A"} {animal.name.lower()} saw the mouse and the mouse looked good.')
     print('\u201CWhere are you going to, little brown mouse?')
     print(f'Come {"for" if animal.name=="Snake" else "and have"} {animal.meal} in my {animal.home} house.\u201D')
     print()
