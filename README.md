@@ -1,4 +1,4 @@
-# Gruffalo
+# the Gruffalo's Code
 The text of the gruffalo captured as a python script.
 
 NOTE:
