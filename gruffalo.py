@@ -21,7 +21,7 @@ animals = [
 
 # ------ STORY TIME ------ #
 print()
-# FIRST ANIMAL ENCOUNTERS
+# MOUSE ENCOUNTERS ANIMALS
 for animal in animals:
     print(f'{"A mouse took a stroll" if animal.name=="Fox" else "On went the mouse"} through the deep dark wood.')
     print(f'A{"n" if animal.name=="Owl" else ""} {animal.name.lower()} saw the mouse and the mouse looked good.')
@@ -45,4 +45,15 @@ for animal in animals:
     print('There\'s no such thing as a gruffal{}'.format('...' if animal.name=="Snake" else 'o?\u201D'))
     print() # page break
 print('...Oh!\u201D')
+print()
+# MOUSE ENCOUNTERS THE GRUFFALO
+# NOTE: This would have been more straight forward to do writing out the individual six lines
+# but the point of the exercise was to capture the structure, not to reprint the Gruffalo
+for animal in animals:
+    if animal.name == "Fox":
+        print("But who is this creature with", end=" ")
+    else:
+        print(f"{'He has' if animal.name=='Owl' else 'His'} {animal.descriptions[0]}{' and' if animal.name=='Owl' else ', his'}", end= " ")
+    print(f"{animal.descriptions[1]}{';' if animal.name=='Snake' else ''}")
+    print(f"{'He has' if animal.name=='Snake' else 'And'} {animal.descriptions[2]}{'?' if animal.name=='Fox' else '.'}")
 print()
