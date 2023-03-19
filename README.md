@@ -1,6 +1,8 @@
 # the Gruffalo's Code
 The text of the gruffalo captured as a python script.
 
+![The Gruffalo coding up a storm.](/images/gruffalo.png)
+
 NOTE:
 The exercise was to capture the structure of the text so when the mouse encounters the gruffalo a loop was used even though it would have been more straight forward to just write those six lines of text out word for word.
 
