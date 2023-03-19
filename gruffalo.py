@@ -46,6 +46,7 @@ for animal in animals:
     print() # page break
 print('...Oh!\u201D')
 print()
+
 # MOUSE ENCOUNTERS THE GRUFFALO
 # NOTE: This would have been more straight forward to do writing out the individual six lines
 # but the point of the exercise was to capture the structure, not to reprint the Gruffalo
@@ -57,6 +58,18 @@ for animal in animals:
     print(f"{animal.descriptions[1]}{';' if animal.name=='Snake' else ''}")
     print(f"{'He has' if animal.name=='Snake' else 'And'} {animal.descriptions[2]}{'?' if animal.name=='Fox' else '.'}")
 print()
-print("\u201COh help! Oh no!")
-print("It's a gruffalo!\u201D")
-print()
+formless_chunk = """\u201COh help! Oh no!
+It's a gruffalo!\u201D
+
+\u201CMy favourite food!\u201D the Guffalo said.
+\u201CYou'll taste good on a slice of bread!\u201D
+\u201CGood?\u201D said the mouse. \u201CDon't call me good!
+I'm the scariest creature in this wood.
+Just walk behind me and soon you'll see,
+Everyone is afraid of me.\u201D
+
+\u201CAll right,\u201D said the Gruffalo, bursting with laughter.
+\u201CYou go ahead and I'll follow after.\u201D"""
+print(formless_chunk)
+
+# ANIMALS ECOUNTER THE GRUFFALO
