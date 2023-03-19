@@ -12,11 +12,15 @@ class Animal:
     fave_food: str
     exclamation: str
     motion: str
+    sound: str
+    location: str
+    expletive: str
+    reaction: str
 
 animals = [
-    Animal("Fox", "lunch", "underground", "terribly kind", ["terrible tusks", "terrible claws", "terrible teeth in his terrible jaws"], "rocks", "Roasted fox", "I'm off", "sped"),
-    Animal("Owl", "tea", "treetop", "frightfully nice", ["knobbly knees", "turned-out toes", "a poisonous wart at the end of his nose"], "stream", "Owl ice cream", "Toowhit toowhoo", "flew"),
-    Animal("Snake", "a feast", "logpile", "wonderfully good", ["eyes are orange", "tongue is black", "purple prickles all over his back"], "lake", "Scrambled snake", "It's time I hid", "slid")
+    Animal("Fox", "lunch", "underground", "terribly kind", ["terrible tusks", "terrible claws", "terrible teeth in his terrible jaws"], "rocks", "Roasted fox", "I'm off", "sped", "feet", "path", "help", None),
+    Animal("Owl", "tea", "treetop", "frightfully nice", ["knobbly knees", "turned-out toes", "a poisonous wart at the end of his nose"], "stream", "Owl ice cream", "Toowhit toowhoo", "flew", "a hoot", "trees", "dear", "Astounding"),
+    Animal("Snake", "a feast", "logpile", "wonderfully good", ["eyes are orange", "tongue is black", "purple prickles all over his back"], "lake", "Scrambled snake", "It's time I hid", "slid", "a hiss", "leaves", "crumbs", "Amazing")
 ]
 
 # ------ STORY TIME ------ #
@@ -57,8 +61,8 @@ for animal in animals:
         print(f"{'He has' if animal.name=='Owl' else 'His'} {animal.descriptions[0]}{' and' if animal.name=='Owl' else ', his'}", end= " ")
     print(f"{animal.descriptions[1]}{';' if animal.name=='Snake' else ''}")
     print(f"{'He has' if animal.name=='Snake' else 'And'} {animal.descriptions[2]}{'?' if animal.name=='Fox' else '.'}")
-print()
-formless_chunk = """\u201COh help! Oh no!
+formless_chunk = """
+\u201COh help! Oh no!
 It's a gruffalo!\u201D
 
 \u201CMy favourite food!\u201D the Guffalo said.
@@ -73,3 +77,30 @@ Everyone is afraid of me.\u201D
 print(formless_chunk)
 
 # ANIMALS ECOUNTER THE GRUFFALO
+for animal in reversed(animals):
+    print(f"They walked {'and walked' if animal.name=='Snake' else 'some more'} till the Guffalo said,")
+    print(f"\u201CI hear {animal.sound} {'on' if animal.name=='Fox' else 'in'} the {animal.location} ahead.\u201D")
+    print()
+    print(f"\u201CIt's {animal.name},\u201D said the mouse. \u201CWhy, {animal.name}, hello!\u201D")
+    print(f"{animal.name} took one look at the Gruffalo.")
+    print(f"\u201COh {animal.expletive}!\u201D he said, \u201CGoodbye, little mouse,\u201D")
+    print(f"And off he {'ran' if animal.name=='Fox' else animal.motion} to his {animal.home} house.")
+    print()
+    if animal.name=='Fox':
+        continue
+    print("\u201CYou see?\u201D said the mouse. \u201CI told you so.\u201D")
+    print(f"\u201C{animal.reaction}!\u201D said the Gruffalo.")
+
+# FINALE
+another_formless_chunk="""\u201CWell, Gruffalo,\u201D said the mouse. \u201CYou see?
+Everyone is afraid of me!
+But now my tummy's beginning to rumble.
+My favourite food is -- gruffalo crumble!\u201D
+
+\u201CGruffalo crumble!\u201D the Gruffalo said,
+And quick as the wind he turned and fled.
+
+All was quite in the deep dark wood.
+The mouse found a nut and the nut was good.
+"""
+print(another_formless_chunk)
