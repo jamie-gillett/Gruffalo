@@ -59,6 +59,7 @@ for animal in animals:
         print(f"{'He has' if animal.name=='Owl' else 'His'} {animal.descriptions[0]}{' and' if animal.name=='Owl' else ', his'}", end= " ")
     print(f"{animal.descriptions[1]}{';' if animal.name=='Snake' else ''}")
     print(f"{'He has' if animal.name=='Snake' else 'And'} {animal.descriptions[2]}{'?' if animal.name=='Fox' else '.'}")
+
 formless_chunk = """
 \u201COh help! Oh no!
 It's a gruffalo!\u201D
