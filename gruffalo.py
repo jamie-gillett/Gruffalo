@@ -57,3 +57,6 @@ for animal in animals:
     print(f"{animal.descriptions[1]}{';' if animal.name=='Snake' else ''}")
     print(f"{'He has' if animal.name=='Snake' else 'And'} {animal.descriptions[2]}{'?' if animal.name=='Fox' else '.'}")
 print()
+print("\u201COh help! Oh no!")
+print("It's a gruffalo!\u201D")
+print()
